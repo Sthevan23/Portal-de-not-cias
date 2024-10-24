@@ -11,8 +11,8 @@
  
   &::before {
     content: "";
-    inset: 0;
     position: absolute;
+    inset: 0;
     top: 50%;
     background: linear-gradient(
    180deg, 
@@ -20,11 +20,16 @@
    #020617 100%
     );  
   }
+
   figcaption {
     position:absolute;
-    bottom: 0px;
+    bottom: 0;
 
     padding: 24px;
+    
+    &:has(.text-lg) {
+    padding: 12px;
+    }
 
     h2 {
       margin-top: 8px;
