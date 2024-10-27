@@ -7,7 +7,7 @@
  :root {
   --brand-color-light:#60A5FA ;
   --brand-color-dark:#1D4ED8 ;
-  --bg-color:#0F172A;
+  --bg-color:#0F172A; 
   --stroke-color:#1E293B ;
   --text-color-primary:#F1F5F9;
   --text-color-secondary : #CBD5E1;
@@ -45,10 +45,21 @@ img {
   max-width: 1280px;
   padding-inline: 32px;
   margin-inline: auto;
+
+  
 }
 main {
+
   margin-top: 40px;
-  gap: 80px;
+  row-gap: 80px;
+  column-gap: 32px;
+
+  grid-template-columns: 2fr 1.5fr;
+
+  grid-template-areas: 
+  "featured featured"
+  "weekly weekly"
+  "ai aside";
 }
 
   .content-tag{
